@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+}
+a{
+    text-decoration: none;
+}
+/*ESTILO BODY*/
+#body{
+    width: 1519px;
+    height: 100vh;
+    background-color: #FFFCDF;
+}
+
+/*ESTILOS HEADER*/
+#header{
+    width: 100%;
+    height: 230px;
+    text-align: center;
+    /*BACKGROUND COLOR FROM UI GRADIENTS*/
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+h1{
+    font-size: 105px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.logoHeader{
+    height: 100px;
+    width: 105px;
+    padding-top: 15px;
+}
+#header h3{
+    font-size: 17px;
+    font-weight: bold;
+}
+.headerNav{
+    margin-top: 40px;
+}
+.headerNav ul li{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    background-color: grey;
+    align-content: center;
+    margin-right: -3px;
+    border-radius: 80px 80px 0px 0px;
+    background: #536976;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.headerNav a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.headerNav ul li:hover{
+    background: #536976;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.headerNav a:hover{
+    color: black;
+}
+
+/*ESTILOS MAIN DEL INDEX*/
+#mainIndex{
+    padding: 250px;
+    text-align: center;
+}
+.login__form{
+    padding: 25px;
+}
+.login__form--texto{
+    font-size: 40px;
+}
+.login__form--botones{
+    font-size: 25px;
+    border-radius: 5px;
+    border: solid;
+}
+.login__form--botones:last-child{
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.login__form--botones:last-child:hover{
+    padding-bottom: 5px;
+    padding-right: 2px;
+    box-shadow: 10px 4px 8px black;
+    transition: 1s;
+}
+hr {
+    border: none;
+    border-top: 2px solid black;
+    color: black;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+  }
+  
+  hr::after {
+    background: #FFFCDF;
+    content: 'o registrate';
+    font-size: 25px;
+    padding: 0 15px;
+    position: relative;
+    top: -13px;
+  }
+
+.login__redes ul li{
+    display: inline-block;
+    width: 150px;
+    margin: 20px;
+    border-radius: 8px;
+}        
+
+.login__redes ul li:first-child{
+    padding: 10px;
+    background-color: #3b5998;
+    border: solid #3b5998;
+}    
+.login__redes ul li:nth-child(2), .login__redes ul li:nth-child(4){
+    padding: 10px;
+    background-color: black;
+    border: solid black;
+}     
+.login__redes ul li:nth-child(3){
+    padding: 10px;
+    background-color: white;
+    border: solid white;
+}    
+.login__redes--facebook, .login__redes--google{
+    color: black;
+    font-weight: bold;
+}
+.login__redes--x, .login__redes--apple{
+    color: white;
+    font-weight: bold;
+}
+
+/*ESTILOS MAIN DEL CONTACTO*/
+#mainContacto{
+    height: 100vh;
+    padding: 120px;
+    text-align: center;
+}
+.mainContacto__formulario{
+    display: inline-block;
+    height: 560px;
+    width: 380px;
+    border-radius: 5px;
+    border: solid black;
+    background-color: #536976;
+}
+.mainContacto__formulario h2{
+    text-align: left;
+    font-size: 40px;
+    padding: 10px;
+}
+.mainContacto__formulario--nombre{
+    display: flex;
+}
+.mainContacto__formulario--nombre label{
+    padding-right: 16px;
+    font-size: 20px;
+}
+.mainContacto__formulario--nombre input{
+    border-radius: 8px;
+    border: 1px solid;
+}
+.mainContacto__formulario--correo{
+    display: flex;   
+}
+.mainContacto__formulario--correo label{
+    padding-right: 30px;
+    font-size: 20px;
+}
+.mainContacto__formulario--correo input{
+    border-radius: 8px;
+    border: 1px solid;
+}
+.mainContacto__formulario--telefono{
+    display: flex;
+
+}
+.mainContacto__formulario--telefono label{
+    padding-right: 13px;
+    font-size: 20px;
+}
+.mainContacto__formulario--telefono input{
+    border-radius: 8px;
+    border: 1px solid;
+}
+.mainContacto__formulario--consulta{
+    display: flex;
+
+}
+.mainContacto__formulario--consulta label{
+    padding-right: 12px;
+    font-size: 20px;
+}
+.mainContacto__formulario--consulta textarea{
+    padding-left: 5px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+.contenedorDatos{
+    padding: 20px;
+}
+.mainContacto__formulario--boton{
+    font-size: 35px;
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 2px solid;
+    background-color: #BBD2C5;
+}
+/*MAIN ACERDA DE*/
+#mainAcercaDe{
+    text-align: center;
+}
+
+
+
+/*ESTILOS FOOTER*/
+#footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+
+    /*BACKGROUND FROM UI GRADIENTS*/
+    background: #536976;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.footer__redes p{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 8px;
+}
+.footer__redes ul li{
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+.footer__nav--lista ul li{
+    display: inline-block;
+    padding: 10px;
+}
+.footer__nav--lista a{
+    color: black;
+}
+
+.footer__nav--lista ul li::marker{
+    content: "";
+}
+.footer__nav--texto{
+    font-weight: bold;
+    padding-top: 60px;
+}
+
+.footer__map iframe{
+    height: 140px;
+    width: 180px;
+    /*padding: top | right | bottom | left   */
+    padding: 5px 20px 5px 0;
+}
