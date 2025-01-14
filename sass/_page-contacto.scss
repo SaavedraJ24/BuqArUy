@@ -1,0 +1,84 @@
+/*ESTILOS MAIN DEL CONTACTO*/
+#mainContacto{
+    height: 100vh;
+    padding: 120px;
+    text-align: center;
+}
+.mainContacto__formulario{
+    display: inline-block;
+    height: 560px;
+    width: 380px;
+    border-radius: 5px;
+    border: solid black;
+    background-color: #536976;
+}
+.mainContacto__formulario h2{
+    text-align: left;
+    font-size: 40px;
+    padding: 10px;
+}
+.mainContacto__formulario--nombre{
+    display: flex;
+}
+.mainContacto__formulario--nombre label{
+    padding-right: 16px;
+    font-size: 20px;
+}
+.mainContacto__formulario--nombre input{
+    border-radius: 8px;
+    border: 1px solid;
+}
+.mainContacto__formulario--correo{
+    display: flex;   
+}
+.mainContacto__formulario--correo label{
+    padding-right: 30px;
+    font-size: 20px;
+}
+.mainContacto__formulario--correo input{
+    border-radius: 8px;
+    border: 1px solid;
+}
+.mainContacto__formulario--telefono{
+    display: flex;
+
+}
+.mainContacto__formulario--telefono label{
+    padding-right: 13px;
+    font-size: 20px;
+}
+.mainContacto__formulario--telefono input{
+    border-radius: 8px;
+    border: 1px solid;
+}
+.mainContacto__formulario--consulta{
+    display: flex;
+
+}
+.mainContacto__formulario--consulta label{
+    padding-right: 12px;
+    font-size: 20px;
+}
+.mainContacto__formulario--consulta textarea{
+    padding-left: 5px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+.contenedorDatos{
+    padding: 20px;
+}
+.mainContacto__formulario--boton{
+    font-size: 35px;
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 2px solid;
+    background-color: #BBD2C5;
+}
+.mainContacto__formulario--boton:hover{
+    /*BACKGROUND FROM UI GRADIENTS*/
+    background: #536976;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

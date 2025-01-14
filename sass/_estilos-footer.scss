@@ -1,0 +1,47 @@
+/*ESTILOS FOOTER*/
+#footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    grid-area: footer;
+    margin-top: auto;
+    /*BACKGROUND FROM UI GRADIENTS*/
+    background: #536976;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.footer__redes p{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 8px;
+}
+.footer__redes ul li{
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+.footer__nav--lista ul li{
+    display: inline-block;
+    padding: 10px;
+}
+.footer__nav--lista a{
+    color: black;
+}
+
+.footer__nav--lista ul li::marker{
+    content: "";
+}
+.footer__nav--texto{
+    font-weight: bold;
+    padding-top: 60px;
+}
+
+.footer__map iframe{
+    height: 140px;
+    width: 180px;
+    /*padding: top | right | bottom | left   */
+    padding: 5px 20px 5px 0;
+}

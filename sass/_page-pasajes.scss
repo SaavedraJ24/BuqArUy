@@ -1,0 +1,140 @@
+/*ESTILOS PAGE PASAJES*/
+
+/*ARTICULO GRILLAS A LA PAGE PASAJES*/
+.body__pasajes--grilla {
+    display: grid;
+    grid-template-areas: 
+            /*col#1     col#2*/
+/*fil#1*/   "header     header"
+/*fil#2*/   "aside      main"
+/*fil#3*/   "aside      main"
+/*fil#4*/   "aside      main"
+/*fil#5*/   "footer     footer"
+    ;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr auto;
+}
+#aside__pasajes{
+    width: auto;
+    grid-area: aside;
+    text-align: center;
+    /*BACKGROUND FROM UIGRADIENTS.COM*/
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#aside__pasajes h2{
+    font-size: 30px;
+    padding-top: 15px;
+}
+#aside__pasajes div{
+    margin: 15px 0 5px 0;
+    display: inline-block;
+}
+#aside__pasajes form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    font-size: 22px;
+}
+#aside__pasajes form select{
+    font-size: 18px;
+    border-radius: 10px;
+}
+#aside__pasajes form input{
+    font-size: 15px;
+    border: 2px black solid;
+    border-radius: 8px;
+}
+#aside__pasajes form input:last-child{
+    font-size: 25px;
+    margin-top: 20px;
+    border: 2px black solid;
+    border-radius: 5px;
+} 
+#aside__pasajes form input:last-child:hover{
+    /*BACKGROUND FROM UIGRADIENTS.COM*/
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#main__pasajes{
+    grid-area: main;
+}
+.seccion__pasajes{
+    margin: 20px auto 20px 10px;
+}
+.seccion__pasajes article{
+    display: flex;
+    padding-top: 5px;
+}
+.seccion__pasajes p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.seccion__pasajes div{
+    text-align: center;
+}
+.seccion__pasajes div span{
+    border: grey solid;
+}
+.seccion__pasajes div span:first-child{
+    padding: 0 100px 0 100px;
+}
+.seccion__pasajes div span:nth-child(2){
+    padding: 0 100px 0 100px;
+}
+.seccion__pasajes div span:last-child{
+    padding: 0 100px 0 100px;
+}
+.seccion__pasajes img{
+    width: 160px;
+    height: 40px;
+}
+.seccion__pasajes table{
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.seccion__pasajes table td input{
+    height: 30px;
+    width: 125px;
+    font-weight: bold;
+}
+.seccion__pasajes table td input:hover{
+    /*BACKGROUND FROM UIGRADIENTS.COM*/
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.seccion__pasajes--compra{
+    margin: auto 0px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.seccion__pasajes--compra div h3{
+    font-size: 20px;
+}
+.seccion__pasajes--compra div p{
+    font-size: 14px;
+}
+#main__pasajes h2:nth-child(3){
+    margin: 5px 0 5px 10px;
+}
+.seccion__pasajes--compra input{
+    margin-right: 20px;
+    width: 70px;
+    height: 38px;
+    border: 2px solid black;
+    border-radius: 8px;
+    align-self: center;
+}
+.seccion__pasajes--compra input:hover{
+    /*BACKGROUND FROM UIGRADIENTS.COM*/
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

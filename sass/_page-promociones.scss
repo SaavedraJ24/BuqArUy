@@ -1,0 +1,63 @@
+/*  ESTILOS PAGE PROMOCIONES    */
+#header--imagen{
+    height: 100px;
+    width: 105px;
+    
+}
+#header{
+    color: black !important;
+}
+#header--tit1{
+    font-size: 105px;
+    text-transform: uppercase;
+}
+#header--tit2{
+    font-size: 17px;
+    font-weight: bold;
+}
+#header--nav{
+    margin-top: 35px;
+}
+#header--nav ul li{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    align-content: center;
+    margin-right: -3px;
+    border-radius: 80px 80px 0px 0px;
+    background: #536976;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#header--nav a{
+    color: white !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#header--nav ul li:hover{
+    background: #536976;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#header--nav a:hover{
+    color: black !important;
+}
+#main__promociones{
+    min-height: 100vh;
+}
+#carouselExampleDark{
+    mask-image: linear-gradient(black 87%, transparent);
+}
+.slide{
+    justify-self: center;
+    margin-top: 20px;
+}
+
+#carouselExampleDark h5{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#carouselExampleDark p{
+    font-weight: bolder;
+}

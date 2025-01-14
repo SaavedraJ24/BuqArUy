@@ -1,0 +1,42 @@
+/*  ESTILOS PAGE ACERCA DE*/
+#mainAcercaDe{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 200px 30px 200px;
+}
+#mainAcercaDe li{
+    content: "";
+}
+.mainAcercaDe__info--buques{
+    display: flex;
+    column-gap: 80px;
+}
+.mainAcercaDe__info{
+    margin-bottom: 30px;
+}
+.mainAcercaDe__info h2{
+    margin-bottom: 5px;
+}
+.mainAcercaDe__info p{
+    font-size: 14px;
+}
+.mainAcercaDe__info ul li{
+    margin-bottom: 5px;
+}
+.mainAcercaDe__info:nth-child(6){
+    margin-bottom: 80px;
+}
+.mainAcercaDe__info--buques img{
+    margin-top: 20px;
+    width: 300px;
+    height: 240px;
+}
+.mainAcercaDe__info--buques img:hover{
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.787);
+    transition: 1s;
+}
+.mainAcercaDe__info--buques p{
+    margin-top: 5px;
+    font-size: 12px;
+    font-style: italic;
+}

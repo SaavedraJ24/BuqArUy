@@ -1,0 +1,113 @@
+@media (max-width: 1400px) {
+    #header{
+        width: auto;
+    }
+    .body__pasajes--grilla {
+        grid-template-areas: 
+                /*col#1     col#2*/
+    /*fil#1*/   "header     header"
+    /*fil#2*/   "aside      aside"
+    /*fil#3*/   "main       main"
+    /*fil#4*/   "main       main"
+    /*fil#5*/   "footer     footer"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 1fr 1fr auto;
+    }
+    #main__pasajes{
+        width: auto;
+    }
+    #aside__pasajes form{
+        display: block;
+        width: auto;
+    }
+  }
+@media (max-width: 785px){
+    #header{
+        width: auto;
+        margin-bottom: auto;
+    }
+
+    #main__producciones{
+        margin-top: auto;
+        width: auto;
+    }
+    .slide{
+        padding-top: 100px;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+}
+@media (max-width: 768px){
+    #header{
+        width: auto;
+    }
+    .headerNav{
+        width: auto;
+    }
+    .body__pasajes--grilla {
+        grid-template-areas: 
+                /*col#1*/
+    /*fil#1*/   "header"
+    /*fil#2*/   "aside "
+    /*fil#3*/   "main  "
+    /*fil#4*/   "main  "
+    /*fil#5*/   "main  "
+    /*fil#6*/   "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 220px auto auto auto auto;
+    }
+    // #aside__pasajes{
+    //     width: auto;
+    // }
+    // #main__pasajes{
+    //     width: auto;
+    // }
+    // .seccion__pasajes{
+    //     width: auto;
+    // }
+    // #aside__pasajes form{
+    //     display: block;
+    //     width: auto;
+    // }
+
+}
+
+@media (max-width: 576px){
+    #header{
+        width: auto;
+    }
+    .headerNav{
+        width: auto;
+    }
+    .body__pasajes--grilla {
+        grid-template-areas: 
+                /*col#1*/
+    /*fil#1*/   "header"
+    /*fil#2*/   "aside "
+    /*fil#3*/   "main  "
+    /*fil#4*/   "main  "
+    /*fil#5*/   "main  "
+    /*fil#6*/   "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 220px auto auto auto auto;
+    }
+    #aside__pasajes{
+        width: auto;
+    }
+    #main__pasajes{
+        width: auto;
+    }
+    .seccion__pasajes{
+        width: auto;
+    }
+    #aside__pasajes form{
+        display: block;
+        width: auto;
+    }
+}

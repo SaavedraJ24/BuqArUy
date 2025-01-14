@@ -1,0 +1,61 @@
+/*ESTILOS MAIN DEL INDEX*/
+#mainIndex{
+    min-height: 100vh;
+    text-align: center;
+}
+.login{
+    margin-top: 150px;
+    padding: 100px;
+}
+.login__form{
+    padding: 25px;
+}
+.login__form--texto{
+    font-size: 40px;
+}
+.login__form--botones{
+    font-size: 25px;
+    border-radius: 5px;
+    border: solid;
+}
+.login__form--botones:last-child{
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.login__form--botones:last-child:hover{
+    padding-bottom: 5px;
+    padding-right: 2px;
+    box-shadow: 10px 4px 8px black;
+    transition: 1s;
+}
+.login__redes ul li{
+    display: inline-block;
+    width: 150px;
+    margin: 20px;
+    border-radius: 8px;
+}        
+
+.login__redes ul li:first-child{
+    padding: 10px;
+    background-color: #3b5998;
+    border: solid #3b5998;
+}    
+.login__redes ul li:nth-child(2), .login__redes ul li:nth-child(4){
+    padding: 10px;
+    background-color: black;
+    border: solid black;
+}     
+.login__redes ul li:nth-child(3){
+    padding: 10px;
+    background-color: white;
+    border: solid white;
+}    
+.login__redes--facebook, .login__redes--google{
+    color: black;
+    font-weight: bold;
+}
+.login__redes--x, .login__redes--apple{
+    color: white;
+    font-weight: bold;
+}
