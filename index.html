@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-
+    <!--    LIBRERIAS DE BOOTSTRAP CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!--    LIBRERIAS DE ANIMATE.STYLE    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Icono de la página -->
     <link rel="shortcut icon" href="../icons/logo.png" type="image/x-icon">
 
@@ -22,22 +25,42 @@
 
     <!-- Hoja de estilo propio -->
     <link rel="stylesheet" href="css/style.css">
-    
+
 </head>
 
 <body id="body">
-    <header id="header">
-        <a href="index.html"><img src="icons/logo.png" alt="logo de BUQARUY" class="logoHeader"></a>
-        <h1>BuqAruy</h1>
-        <h3>Conectando dos países hermanos</h3>
-        <nav class="headerNav">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="pages/pasajes.html">Pasajes</a></li>
-                <li><a href="pages/acercaDe.html">Acerca de</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-                <li><a href="pages/promociones.html">Promociones</a></li>
-            </ul>
+    <header class="navbar navbar-expand-lg" id="header">
+        <nav class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="icons/logo.png" alt="Logo Buqaruy" width="30" height="28"
+                    class="d-inline-block align-text-top animate__animated animate__rollIn">
+                <h1 class="titulo d-inline-block animate__animated animate__rollIn">buqaruy</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link active animate__animated animate__rollIn" aria-current="page"
+                            href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link animate__animated animate__rollIn" href="pages/pasajes.html">Pasajes</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link animate__animated animate__rollIn" href="pages/acercaDe.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link animate__animated animate__rollIn" href="pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link animate__animated animate__rollIn"
+                            href="pages/promociones.html">Promociones</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -49,10 +72,13 @@
                 <input type="password" name="password" placeholder="Ingresar contraseña" class="login__form--botones">
                 <input type="button" value="Ingresar" class="login__form--botones">
             </form>
-            <hr>
+            <div>
+                <hr id="login__form--registrarse">
+            </div>
             <nav class="login__redes">
                 <ul>
-                    <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank" class="login__redes--facebook">con Facebook</a></li>
+                    <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank"
+                            class="login__redes--facebook">con Facebook</a></li>
                     <li><a href="" target="_blank" class="login__redes--x">con X</a></li>
                     <li><a href="" target="_blank" class="login__redes--google">con Google</a></li>
                     <li><a href="" target="_blank" class="login__redes--apple">con Apple</a></li>
@@ -60,11 +86,123 @@
             </nav>
         </section>
 
+        
+        <section class="contenedor__tarjetasPlegables">
+            <section class="tarjetaPlegable">
+                <article class="tarjetaPlegable__interior">
+                    <div class="tarjetaPlegable__interior--frente">
+                        <h2 class="tarjetaPlegable--titulo">Bienvenido!</h2>
+                        <p>Mira dentro</p>
+                    </div>
+                    <div class="tarjetaPlegable__interior--despalda">
+                        <h2 class="tarjetaPlegable--titulo">Gracias!</h2>
+                        <p>Por visitarnos, sigue navegando por nuestro sitio web en el que encontraras maravillosas
+                            novedades de <strong>BUQARUY</strong>, nuestra empresa de viajes a traves del Rio Uruguay.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="tarjetaPlegable">
+                <article class="tarjetaPlegable__interior">
+                    <div class="tarjetaPlegable__interior--frente">
+                        <h2 class="tarjetaPlegable--titulo">Ganas de viajar?</h2>
+                    </div>
+                    <div class="tarjetaPlegable__interior--despalda">
+                        <h2 class="tarjetaPlegable--titulo">No esperes más!</h2>
+                        <p><strong>BUQARUY </strong> te ofrece increibles precios, tarifas super bajas y un excelente
+                            servicio en todas las áreas en las cuales nos desenvolvemos.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="tarjetaPlegable">
+                <article class="tarjetaPlegable__interior">
+                    <div class="tarjetaPlegable__interior--frente">
+                        <h2 class="tarjetaPlegable--titulo">Descubre el Río de la Plata</h2>
+                    </div>
+                    <div class="tarjetaPlegable__interior--despalda">
+                        <h2 class="tarjetaPlegable--titulo">Un paraíso entre dos países</h2>
+                        <p>Explora la belleza del Río de la Plata con nuestra flota de barcos modernos y cómodos.
+                            Conecta
+                            Uruguay y Argentina de manera única mientras disfrutas de nuestros servicios a bordo y del
+                            aire
+                            fresco.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="tarjetaPlegable">
+                <article class="tarjetaPlegable__interior">
+                    <div class="tarjetaPlegable__interior--frente">
+                        <h2 class="tarjetaPlegable--titulo">Viaja Seguro y Cómodo</h2>
+                    </div>
+                    <div class="tarjetaPlegable__interior--despalda">
+                        <h2 class="tarjetaPlegable--titulo">Confiabilidad garantizada</h2>
+                        <p>Nuestros barcos están diseñados para brindarte comodidad, seguridad y puntualidad. Relájate y
+                            disfruta del viaje mientras nosotros nos encargamos del resto!</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="tarjetaPlegable">
+                <article class="tarjetaPlegable__interior">
+                    <div class="tarjetaPlegable__interior--frente">
+                        <h2 class="tarjetaPlegable--titulo">Planes para TODOS!</h2>
+                    </div>
+                    <div class="tarjetaPlegable__interior--despalda">
+                        <h2 class="tarjetaPlegable--titulo">Adaptados a tus necesidades</h2>
+                        <p>Ya sea que viajes por turismo, trabajo o con la familia, tenemos el plan ideal para ti.
+                            Consulta
+                            nuestras opciones personalizadas y viaja sin preocupaciones.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="tarjetaPlegable">
+                <article class="tarjetaPlegable__interior">
+                    <div class="tarjetaPlegable__interior--frente">
+                        <h2 class="tarjetaPlegable--titulo">Un Viaje, mil Recuerdos</h2>
+                    </div>
+                    <div class="tarjetaPlegable__interior--despalda">
+                        <h2 class="tarjetaPlegable--titulo">Experiencias Inolvidables</h2>
+                        <p>Conecta culturas y paisajes en cada travesía. Haz que cada viaje se convierta en una aventura
+                            que
+                            recordarás para siempre.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="tarjetaPlegable">
+                <article class="tarjetaPlegable__interior">
+                    <div class="tarjetaPlegable__interior--frente">
+                        <h2 class="tarjetaPlegable--titulo">Promociones Exclusivas</h2>
+                    </div>
+                    <div class="tarjetaPlegable__interior--despalda">
+                        <h2 class="tarjetaPlegable--titulo">Ofertas que te encantarán!</h2>
+                        <p>Aprovecha descuentos increíbles y promociones especiales para tus próximos viajes. ¡Viajar
+                            nunca
+                            fue tan accesible!</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="tarjetaPlegable">
+                <article class="tarjetaPlegable__interior">
+                    <div class="tarjetaPlegable__interior--frente">
+                        <h2 class="tarjetaPlegable--titulo">Tu Aventura comienza aquí</h2>
+                    </div>
+                    <div class="tarjetaPlegable__interior--despalda">
+                        <h2 class="tarjetaPlegable--titulo">¡Haz tu reserva ahora!</h2>
+                        <p>No dejes para mañana la oportunidad de vivir una experiencia única. Reserva hoy mismo y
+                            prepárate
+                            para explorar los mejores lugares de Argentina y Uruguay!</p>
+                    </div>
+                </article>
+            </section>
+        </section>
 
 
 
     </main>
-
 
     <footer id="footer">
         <section class="footer__redes">
@@ -78,18 +216,21 @@
         <section class="footer__nav">
             <nav class="footer__nav--lista">
                 <ul>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
+                    <li><a href="pages/contacto.html">Atencion al cliente</a></li>
+                    <li><a href="pages/acercaDe.html">Nosotros</a></li>
                 </ul>
             </nav>
             <p class="footer__nav--texto">© Todos los derechos reservados - Joaquin Saavedra</p>
         </section>
         <section class="footer__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.1152918572257!2d-57.848433703235855!3d-34.47459940359816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a31269389e53d7%3A0xe8d0ecab440aa1aa!2sDepartamento%20de%20Colonia%2C%20Uruguay!5e0!3m2!1ses-419!2sar!4v1733328128760!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.1152918572257!2d-57.848433703235855!3d-34.47459940359816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a31269389e53d7%3A0xe8d0ecab440aa1aa!2sDepartamento%20de%20Colonia%2C%20Uruguay!5e0!3m2!1ses-419!2sar!4v1733328128760!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </footer>
+    <!--    LIBRERIAS DE BOOTSTRAP  JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 

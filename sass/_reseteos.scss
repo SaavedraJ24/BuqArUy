@@ -10,25 +10,9 @@ li{
 a{
     text-decoration: none;
 }
-
-hr {
-    border: none;
-    border-top: 2px solid black;
-    color: black;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
+hr{
+    color: black!important;
 }
-  
-hr::after {
-    background: #FFFCDF;
-    content: 'o registrate';
-    font-size: 25px;
-    padding: 0 15px;
-    position: relative;
-    top: -13px;
-}
-
 /*ESTILO BODY*/
 #body{
     max-width: 1520px;

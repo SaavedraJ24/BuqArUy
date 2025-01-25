@@ -25,7 +25,12 @@
 }
 .footer__nav--lista ul li{
     display: inline-block;
-    padding: 10px;
+    margin: 10px 15px 0 0;
+}
+.footer__nav--lista ul li:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 1s;
 }
 .footer__nav--lista a{
     color: black;
@@ -36,7 +41,7 @@
 }
 .footer__nav--texto{
     font-weight: bold;
-    padding-top: 60px;
+    margin-top: 60px;
 }
 
 .footer__map iframe{

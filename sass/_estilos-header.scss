@@ -1,55 +1,20 @@
 /*ESTILOS HEADER*/
 #header{
-    width: 100%;
-    height: 230px;
-    text-align: center;
     grid-area: header;
-    /*BACKGROUND COLOR FROM UI GRADIENTS*/
-    background: #BBD2C5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background-color: #6FB1FC;
 }
-h1{
-    font-size: 105px;
+.titulo{
     text-transform: uppercase;
-    display: inline-block;
-}
-.logoHeader{
-    height: 100px;
-    width: 105px;
-    padding-top: 15px;
-}
-#header h3{
-    font-size: 17px;
-    font-weight: bold;
-}
-.headerNav{
-    margin-top: 40px;
-}
-.headerNav ul li{
-    display: inline-block;
-    width: 150px;
-    height: 30px;
-    background-color: grey;
-    align-content: center;
-    margin-right: -3px;
-    border-radius: 80px 80px 0px 0px;
-    background: #536976;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.headerNav a{
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: larger;
+    text-decoration: underline;
 }
 
-.headerNav ul li:hover{
-    background: #536976;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.navbar-nav{
+    margin-right: 380px;
 }
-.headerNav a:hover{
-    color: black;
+.nav-item{
+    padding-right: 25px;
+}
+.nav-item:hover{
+    text-decoration: underline;
 }

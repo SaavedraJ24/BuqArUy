@@ -1,61 +1,167 @@
 /*ESTILOS MAIN DEL INDEX*/
-#mainIndex{
+#mainIndex {
     min-height: 100vh;
     text-align: center;
 }
-.login{
-    margin-top: 150px;
-    padding: 100px;
+
+.login {
+    grid-area: login;
+    margin: 0 20px 0 20px;
 }
-.login__form{
-    padding: 25px;
+
+.login__form {
+    margin-top: 20px;
 }
-.login__form--texto{
-    font-size: 40px;
+
+.login__form--texto {
+    font-size: 20px;
 }
-.login__form--botones{
-    font-size: 25px;
+
+.login__form--botones {
+    font-size: 15px;
+    border-radius: 2px;
+    border: 2px solid rgba(0, 0, 0, 0.715);
+}
+
+.login__form--botones:last-child {
+    font-size: 14px;
+    padding: 2px;
     border-radius: 5px;
-    border: solid;
+    border: 2px solid rgba(0, 0, 0, 0.715);
 }
-.login__form--botones:last-child{
-    font-size: 30px;
-    padding: 5px;
-    border-radius: 5px;
-}
-.login__form--botones:last-child:hover{
-    padding-bottom: 5px;
-    padding-right: 2px;
-    box-shadow: 10px 4px 8px black;
-    transition: 1s;
-}
-.login__redes ul li{
+
+.login__redes ul li {
     display: inline-block;
     width: 150px;
-    margin: 20px;
+    margin: 8px 20px 0 0;
     border-radius: 8px;
-}        
+}
 
-.login__redes ul li:first-child{
-    padding: 10px;
+.login__redes ul li:first-child {
+    padding: 5px;
     background-color: #3b5998;
     border: solid #3b5998;
-}    
-.login__redes ul li:nth-child(2), .login__redes ul li:nth-child(4){
-    padding: 10px;
+}
+
+.login__redes ul li:nth-child(2),
+.login__redes ul li:nth-child(4) {
+    padding: 5px;
     background-color: black;
     border: solid black;
-}     
-.login__redes ul li:nth-child(3){
-    padding: 10px;
+}
+
+.login__redes ul li:nth-child(3) {
+    padding: 5px;
     background-color: white;
     border: solid white;
-}    
-.login__redes--facebook, .login__redes--google{
+}
+
+.login__redes--facebook,
+.login__redes--google {
     color: black;
     font-weight: bold;
 }
-.login__redes--x, .login__redes--apple{
+
+.login__redes--x,
+.login__redes--apple {
     color: white;
     font-weight: bold;
+}
+
+/*      Estilo el hr    */
+.login div{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+#login__form--registrarse {
+    border: none;
+    border-top: 3px solid black;
+    color: black;
+    overflow: visible;
+    height: 5px;
+    width: 50%;
+}
+
+hr::after {
+    color: black;
+    background: #FFFCDF;
+    content: 'o registrate';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+/*  Estilo el contenedor de las tarjetas plegables  */
+.contenedor__tarjetasPlegables{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 150px;
+    margin-top: 30px;
+}
+
+
+
+/*  Estilo las tarjetas plegables   */
+/* From Uiverse.io by joe-watson-sbf */
+.tarjetaPlegable {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+
+.tarjetaPlegable--titulo {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.tarjetaPlegable__interior {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.tarjetaPlegable:hover .tarjetaPlegable__interior {
+    transform: rotateY(180deg);
+}
+
+.tarjetaPlegable__interior--frente,
+.tarjetaPlegable__interior--despalda {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+}
+
+.tarjetaPlegable__interior--frente {
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+            rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: coral;
+}
+
+.tarjetaPlegable__interior--despalda {
+    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+            bisque 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.tarjetaPlegable__interior--despalda p{
+    font-weight: bold;
+    font-size: small;
+    font-family: "Raleway"
 }
