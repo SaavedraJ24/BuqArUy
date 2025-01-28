@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compra los mejores pasajes para viajar a Uruguay y Argentina! Precios accesibles">
+    <meta name="keywords" content="Pasajes, Uruguay, Argentina, Buenos Aires, Mendoza, Tigre, Buques, Montevideo, Colonia, Buqaruy">
     <title>Pasajes</title>
 
     <!--    LIBRERIAS DE BOOTSTRAP CSS  -->
@@ -30,7 +32,7 @@
 </head>
 
 <body id="body" class="body__pasajes--grilla">
-    <header class="navbar navbar-expand-lg" id="header">
+    <header class="navbar navbar-expand-lg col-sm-12 col-md-12 col-lg-12" id="header">
         <nav class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <img src="../icons/logo.png" alt="Logo Buqaruy" width="30" height="28"
@@ -64,7 +66,7 @@
         </nav>
     </header>
 
-    <aside id="aside__pasajes">
+    <aside id="aside__pasajes" class="col-sm-12 col-md-12 col-lg-12">
         <h2>Buscar pasajes</h2>
         <div>
             <input type="checkbox" checked>
@@ -111,14 +113,14 @@
         <section class="seccion__pasajes">
             <h2>Ida</h2>
             <p>Montevideo - Buenos Aires (fecha)</p>
-            <div>
-                <span>Turista</span>
-                <span>Business</span>
-                <span>vip</span>
-            </div>
             <article>
-                <img src="../images/tramo__mont-baires.png" alt="tramo montevideo - buenos aires">
+                <img class="align-self-end" src="../images/tramo__mont-baires.png" alt="tramo montevideo - buenos aires">
                 <table>
+                    <tr>
+                        <th colspan="2" class="text-center text-uppercase">turista <i class="fa-solid fa-circle-info fa-xs animate__animated animate__wobble" style="color: #000000;"></i></th>
+                        <th colspan="2" class="text-center text-uppercase">business <i class="fa-solid fa-circle-info fa-xs animate__animated animate__wobble" style="color: #000000;"></i></th>
+                        <th colspan="2" class="text-center text-uppercase">vip <i class="fa-solid fa-circle-info fa-xs animate__animated animate__wobble" style="color: #000000;"></i></th>
+                    </tr>
                     <tr>
                         <td><input type="button" value="Programada $1450"></td>
                         <td><input type="button" value="Flexible $1800"></td>
@@ -172,14 +174,14 @@
         <section class="seccion__pasajes">
             <h2>Vuelta</h2>
             <p>Buenos Aires - Montevideo (fecha)</p>
-            <div>
-                <span>Turista</span>
-                <span>Business</span>
-                <span>vip</span>
-            </div>
             <article>
-                <img src="../images/tramo__baires-mont.png" alt="">
+                <img class="align-self-end" src="../images/tramo__baires-mont.png" alt="">
                 <table>
+                    <tr>
+                        <th colspan="2" class="text-center text-uppercase">turista <i class="fa-solid fa-circle-info fa-xs animate__animated animate__wobble" style="color: #000000;"></i></th>
+                        <th colspan="2" class="text-center text-uppercase">business <i class="fa-solid fa-circle-info fa-xs animate__animated animate__wobble" style="color: #000000;"></i></th>
+                        <th colspan="2" class="text-center text-uppercase">vip <i class="fa-solid fa-circle-info fa-xs animate__animated animate__wobble" style="color: #000000;"></i></th>
+                    </tr>
                     <tr>
                         <td><input type="button" value="Programada $1850"></td>
                         <td><input type="button" value="Flexible $2000"></td>
@@ -231,7 +233,7 @@
             </article>
         </section>
         <h2>Finalizar compra</h2>
-        <section class="seccion__pasajes--compra">
+        <section class="seccion__pasajes--compra col-sm-12 col-md-12 col-lg-12">
             <div>
                 <h3>Ida</h3>
                 <p>Montevideo - Buenos Aires (fecha)</p>
@@ -254,7 +256,7 @@
     </main>
 
 
-    <footer id="footer" class="pasajes__footer">
+    <footer id="footer" class="pasajes__footer col-sm-12 col-md-12">
         <section class="footer__redes">
             <p>Encuentranos en</p>
             <ul>
