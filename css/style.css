@@ -18,9 +18,15 @@ hr {
   color: black !important;
 }
 
+table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 /*ESTILO BODY*/
 #body {
   background-color: #FFFCDF;
+  overflow-x: hidden;
 }
 
 /*ESTILOS HEADER*/
@@ -51,6 +57,7 @@ hr {
 #mainIndex {
   min-height: 100vh;
   text-align: center;
+  margin-bottom: auto;
 }
 
 .login {
@@ -147,7 +154,7 @@ hr::after {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px 150px;
-  margin-top: 30px;
+  margin: 5px 0 30px 0;
 }
 
 /*  Estilo las tarjetas plegables   */
@@ -161,7 +168,7 @@ hr::after {
 }
 
 .tarjetaPlegable--titulo {
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 900;
   text-align: center;
   margin: 0;
@@ -202,7 +209,7 @@ hr::after {
 
 .tarjetaPlegable__interior--despalda {
   background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%, bisque 40%, rgb(255, 185, 160) 78%);
-  color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 

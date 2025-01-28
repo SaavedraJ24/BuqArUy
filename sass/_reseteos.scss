@@ -14,7 +14,12 @@ a{
 hr{
     color: black!important;
 }
+table{
+    max-width: 100%;
+    overflow-x: auto;
+}
 /*ESTILO BODY*/
 #body{
     background-color: #FFFCDF;
+    overflow-x: hidden;
 }
