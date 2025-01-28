@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Raleway";
+  color: black;
 }
 
 li {
@@ -19,7 +20,6 @@ hr {
 
 /*ESTILO BODY*/
 #body {
-  max-width: 1520px;
   background-color: #FFFCDF;
 }
 
@@ -54,7 +54,6 @@ hr {
 }
 
 .login {
-  grid-area: login;
   margin: 0 20px 0 20px;
 }
 
@@ -223,7 +222,6 @@ hr::after {
 }
 
 #aside__pasajes {
-  width: auto;
   grid-area: aside;
   text-align: center;
   /*BACKGROUND FROM UIGRADIENTS.COM*/
@@ -235,11 +233,6 @@ hr::after {
 #aside__pasajes h2 {
   font-size: 30px;
   padding-top: 15px;
-}
-
-#aside__pasajes div {
-  margin: 15px 0 5px 0;
-  display: inline-block;
 }
 
 #aside__pasajes form {
@@ -285,7 +278,6 @@ hr::after {
 
 .seccion__pasajes article {
   display: flex;
-  padding-top: 5px;
 }
 
 .seccion__pasajes p {
@@ -293,40 +285,27 @@ hr::after {
   margin-bottom: 8px;
 }
 
-.seccion__pasajes div {
-  text-align: center;
-}
-
-.seccion__pasajes div span {
-  border: grey solid;
-}
-
-.seccion__pasajes div span:first-child {
-  padding: 0 100px 0 100px;
-}
-
-.seccion__pasajes div span:nth-child(2) {
-  padding: 0 100px 0 100px;
-}
-
-.seccion__pasajes div span:last-child {
-  padding: 0 100px 0 100px;
-}
-
 .seccion__pasajes img {
   width: 160px;
-  height: 40px;
+  height: 50%;
+  margin-bottom: 2px;
+}
+
+.seccion__pasajes article table th {
+  border: 2px black solid;
+}
+
+.seccion__pasajes table td {
+  height: 100%;
+  width: 100%;
 }
 
 .seccion__pasajes table {
-  display: inline-block;
-  margin-left: 10px;
+  margin-bottom: 2px;
 }
 
 .seccion__pasajes table td input {
-  height: 30px;
-  width: 125px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .seccion__pasajes table td input:hover {
@@ -383,6 +362,7 @@ hr::after {
 
 .mainAcercaDe__info--buques {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 80px;
 }
 
@@ -599,7 +579,6 @@ hr::after {
 
 /*ESTILOS FOOTER*/
 #footer {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -657,76 +636,22 @@ hr::after {
 
 @media (max-width: 1400px) {
   #header {
-    width: auto;
+    width: 100%;
   }
   .body__pasajes--grilla {
     grid-template-areas: "header     header" "aside      aside" "main       main" "main       main" "footer     footer";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 1fr 1fr auto;
+    grid-template-rows: auto 200px 1fr 1fr auto;
   }
   #main__pasajes {
-    width: auto;
+    width: 100%;
   }
   #aside__pasajes form {
-    display: block;
-    width: auto;
+    display: inline-block;
+    width: 100%;
   }
-}
-@media (max-width: 785px) {
-  #header {
-    width: auto;
-    margin-bottom: auto;
-  }
-  #main__producciones {
-    margin-top: auto;
-    width: auto;
-  }
-  .slide {
-    padding-top: 100px;
-  }
-  #footer {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-  }
-}
-@media (max-width: 768px) {
-  #header {
-    width: auto;
-  }
-  .headerNav {
-    width: auto;
-  }
-  .body__pasajes--grilla {
-    grid-template-areas: "header" "aside " "main  " "main  " "main  " "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 220px auto auto auto auto;
-  }
-}
-@media (max-width: 576px) {
-  #header {
-    width: auto;
-  }
-  .headerNav {
-    width: auto;
-  }
-  .body__pasajes--grilla {
-    grid-template-areas: "header" "aside " "main  " "main  " "main  " "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 220px auto auto auto auto;
-  }
-  #aside__pasajes {
-    width: auto;
-  }
-  #main__pasajes {
-    width: auto;
-  }
-  .seccion__pasajes {
-    width: auto;
-  }
-  #aside__pasajes form {
-    display: block;
-    width: auto;
+  #aside__pasajes div {
+    display: inline-block;
   }
 }
 

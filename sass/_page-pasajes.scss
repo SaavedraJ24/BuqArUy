@@ -15,7 +15,6 @@
     grid-template-rows: auto 1fr 1fr 1fr auto;
 }
 #aside__pasajes{
-    width: auto;
     grid-area: aside;
     text-align: center;
     /*BACKGROUND FROM UIGRADIENTS.COM*/
@@ -28,10 +27,7 @@
     font-size: 30px;
     padding-top: 15px;
 }
-#aside__pasajes div{
-    margin: 15px 0 5px 0;
-    display: inline-block;
-}
+
 #aside__pasajes form{
     display: flex;
     flex-direction: column;
@@ -68,41 +64,28 @@
 }
 .seccion__pasajes article{
     display: flex;
-    padding-top: 5px;
 }
 .seccion__pasajes p{
     font-size: 14px;
     margin-bottom: 8px;
 }
-.seccion__pasajes div{
-    text-align: center;
-}
-.seccion__pasajes div span{
-    border: grey solid;
-}
-.seccion__pasajes div span:first-child{
-    padding: 0 100px 0 100px;
-}
-.seccion__pasajes div span:nth-child(2){
-    padding: 0 100px 0 100px;
-}
-.seccion__pasajes div span:last-child{
-    padding: 0 100px 0 100px;
-}
 .seccion__pasajes img{
     width: 160px;
-    height: 40px;
+    height: 50%;
+    margin-bottom: 2px;
+}
+.seccion__pasajes article table th{
+    border: 2px black solid;
+}
+.seccion__pasajes table td{
+    height: 100%;
+    width: 100%;
 }
 .seccion__pasajes table{
-    display: inline-block;
-    margin-left: 10px;
-    
+    margin-bottom: 2px;
 }
-
 .seccion__pasajes table td input{
-    height: 30px;
-    width: 125px;
-    font-weight: bold;
+    font-weight: 700;
 }
 .seccion__pasajes table td input:hover{
     /*BACKGROUND FROM UIGRADIENTS.COM*/
