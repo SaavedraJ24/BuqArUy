@@ -1,125 +1,293 @@
-@media (max-width: 1400px) {
-    #header {
-        width: 100%;
-    }
-
+@media (min-width: 450px) {
     .body__pasajes--grilla {
+        display: grid;
         grid-template-areas:
-            /*col#1     col#2*/
-/*fil#1*/   "header     header"
-/*fil#2*/   "aside      aside"
-/*fil#3*/   "main       main"
-/*fil#4*/   "main       main"
-/*fil#5*/   "footer     footer"
-    ;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 200px 1fr 1fr auto;
+            "header"
+            "aside"
+            "main"
+            "main"
+            "main"
+            "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 220px 1fr 1fr 1fr auto;
     }
 
-    #main__pasajes {
+    #header {
+        grid-area: header;
+    }
+
+    #aside__pasajes {
+        grid-area: aside;
+    }
+
+    #aside__pasajes h2 {
         width: 100%;
+        text-align: center;
+    }
+
+    .contenedor--checkbox {
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+
     }
 
     #aside__pasajes form {
         display: inline-block;
-        width: 100%;
     }
 
-    #aside__pasajes div {
-        display: inline-block;
+    .seccion__pasajes article img {
+        display: none;
+    }
+
+    .seccion__pasajes article table {
+        font-size: 9px;
     }
 }
 
-// // @media (max-width: 785px){
-// //     #header{
-// //         width: auto;
-// //         margin-bottom: auto;
-// //     }
-// //     .slide{
-// //         padding-top: 100px;
-// //     }
-// //     #footer{
-// //         display: flex;
-// //         flex-direction: column;
-// //         width: auto;
-// //     }
-// // }
-// // @media (max-width: 768px){
-// //     #header{
-// //         width: auto;
-// //     }
-// //     .body__pasajes--grilla {
-// //         grid-template-areas: 
-// //                 /*col#1*/
-// //     /*fil#1*/   "header"
-// //     /*fil#2*/   "aside "
-// //     /*fil#3*/   "main  "
-// //     /*fil#4*/   "main  "
-// //     /*fil#5*/   "main  "
-// //     /*fil#6*/   "footer"
-// //         ;
-// //         grid-template-columns: 100%;
-// //         grid-template-rows: auto 240px auto auto auto auto;
-// //     }
-// //     #aside__pasajes{
-// //         display: inline-block;
-// //         width: 100%;
-// //     }
-// //     #main__pasajes{
-// //         width: 100%;
-// //     }
-// //      .seccion__pasajes article{
-// //         flex-wrap: wrap;
-// //     }
-// //      .seccion_pasajes img{
-// //         display: none;
-// //     }
-// //      .seccion__pasajes table tr td{
-// //         height: 35px;
-// //     }
-// // }
+@media (min-width: 576px) {
+    .body__pasajes--grilla {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "main"
+            "main"
+            "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 220px 1fr 1fr 1fr auto;
+    }
 
+    #header {
+        grid-area: header;
+    }
 
+    #aside__pasajes {
+        grid-area: aside;
+    }
 
+    #aside__pasajes h2 {
+        width: 100%;
+        text-align: center;
+    }
 
+    .contenedor--checkbox {
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
 
+    }
 
+    #aside__pasajes form {
+        display: inline-block;
+    }
 
+    .seccion__pasajes article img {
+        display: none;
+    }
 
+    .seccion__pasajes article table {
+        font-size: 10px;
+    }
+}
 
+@media (min-width: 800px) {
+    .body__pasajes--grilla {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "main"
+            "main"
+            "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 220px 1fr 1fr 1fr auto;
+    }
 
+    #header {
+        grid-area: header;
+    }
 
-//  // // @media (max-width: 576px){
-//  //     #header{
-//  //         width: auto;
-//  //     }
-//  //     .headerNav{
-//  //         width: auto;
-//  //     }
-//  //     .body__pasajes--grilla {
-//  //         grid-template-areas: 
-//  //                 /*col#1*/
-//  //     /*fil#1*/   "header"
-//  //     /*fil#2*/   "aside "
-//  //     /*fil#3*/   "main  "
-//  //     /*fil#4*/   "main  "
-//  //     /*fil#5*/   "main  "
-//  //     /*fil#6*/   "footer"
-//  //         ;
-//  //         grid-template-columns: 1fr;
-//  //         grid-template-rows: auto 220px auto auto auto auto;
-//  //     }
-//  //     #aside__pasajes{
-//  //         width: auto;
-//  //     }
-//  //     #main__pasajes{
-//  //         width: auto;
-//  //     }
-//  //     .seccion__pasajes{
-//  //         width: auto;
-//  //     }
-//  //     #aside__pasajes form{
-//  //         display: block;
-//  //         width: auto;
-//  //     }
-//  // }
+    #aside__pasajes {
+        grid-area: aside;
+    }
+
+    #aside__pasajes h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor--checkbox {
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+
+    }
+
+    #aside__pasajes form {
+        display: inline-block;
+    }
+
+    .seccion__pasajes article img {
+        display: none;
+    }
+
+    .seccion__pasajes article table {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) {
+    .body__pasajes--grilla {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "main"
+            "main"
+            "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 220px 1fr 1fr 1fr auto;
+    }
+
+    #header {
+        grid-area: header;
+    }
+
+    #aside__pasajes {
+        grid-area: aside;
+    }
+
+    #aside__pasajes h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor--checkbox {
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+
+    }
+
+    #aside__pasajes form {
+        display: inline-block;
+    }
+
+    .seccion__pasajes article img {
+        display: block;
+    }
+
+    .seccion__pasajes article table {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .body__pasajes--grilla {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "aside  main  "
+            "aside  main  "
+            "aside  main  "
+            "footer footer"
+        ;
+        grid-template-columns: 340px 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr auto;
+    }
+
+    #header {
+        grid-area: header;
+    }
+
+    #aside__pasajes {
+        grid-area: aside;
+    }
+
+    #aside__pasajes h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor--checkbox {
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+
+    }
+
+    #aside__pasajes form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+        font-size: 22px;
+    }
+
+    .seccion__pasajes article img {
+        display: block;
+    }
+
+    .seccion__pasajes article table {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .body__pasajes--grilla {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "aside  main  "
+            "aside  main  "
+            "aside  main  "
+            "footer footer"
+        ;
+        grid-template-columns: 340px 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr auto;
+    }
+
+    #header {
+        grid-area: header;
+    }
+
+    #aside__pasajes {
+        grid-area: aside;
+    }
+
+    #aside__pasajes h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor--checkbox {
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+
+    }
+
+    #aside__pasajes form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+        font-size: 22px;
+    }
+
+    .seccion__pasajes article img {
+        display: block;
+    }
+
+    .seccion__pasajes article table {
+        font-size: 18px;
+    }
+}
