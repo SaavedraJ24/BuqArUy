@@ -621,7 +621,7 @@ hr::after {
   .body__pasajes--grilla {
     display: grid;
     grid-template-areas: "header" "aside" "main" "main" "main" "footer";
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
     grid-template-rows: auto 220px 1fr 1fr 1fr auto;
   }
   #header {
@@ -641,12 +641,22 @@ hr::after {
   }
   #aside__pasajes form {
     display: inline-block;
+    font-size: 12px;
+  }
+  #aside__pasajes form select {
+    font-size: 12px;
+  }
+  #aside__pasajes form input {
+    font-size: 12px;
+  }
+  #aside__pasajes form input:last-child {
+    font-size: 12px;
   }
   .seccion__pasajes article img {
     display: none;
   }
   .seccion__pasajes article table {
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 @media (min-width: 450px) {
