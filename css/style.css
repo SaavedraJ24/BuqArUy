@@ -617,7 +617,7 @@ hr::after {
   padding: 5px 20px 5px 0;
 }
 
-@media (min-width: 393px) {
+@media (min-width: 390px) {
   .body__pasajes--grilla {
     display: grid;
     grid-template-areas: "header" "aside" "main" "main" "main" "footer";
@@ -637,7 +637,7 @@ hr::after {
   .contenedor--checkbox {
     display: flex;
     justify-content: center;
-    gap: 1.5em;
+    gap: 0.8em;
   }
   #aside__pasajes form {
     display: inline-block;
