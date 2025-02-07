@@ -2,7 +2,9 @@
 #mainAcercaDe{
     display: flex;
     flex-direction: column;
-    margin: 30px 200px 30px 200px;
+    /*margin: 30px 200px 30px 200px;*/
+    margin: 0;
+    padding: 30px;
 }
 #mainAcercaDe li{
     content: "";

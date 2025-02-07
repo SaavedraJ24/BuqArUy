@@ -356,7 +356,9 @@ hr::after {
 #mainAcercaDe {
   display: flex;
   flex-direction: column;
-  margin: 30px 200px 30px 200px;
+  /*margin: 30px 200px 30px 200px;*/
+  margin: 0;
+  padding: 30px;
 }
 
 #mainAcercaDe li {
@@ -409,7 +411,7 @@ hr::after {
 /*ESTILOS MAIN DEL CONTACTO*/
 #mainContacto {
   height: 100vh;
-  padding: 120px;
+  padding: 120px 0px;
   text-align: center;
 }
 
